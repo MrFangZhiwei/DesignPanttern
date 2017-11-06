@@ -45,6 +45,6 @@ public class SimpleFactory
     {
         SimpleFactory sf = new SimpleFactory();
         sf.getFood("Fries").name();
-        sf.getFood("Cola").name();;
+        sf.getFood("Cola").name();
     }
 }
