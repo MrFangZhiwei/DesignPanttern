@@ -13,13 +13,13 @@ interface Food{
 }
 class Fries implements Food{
     public void name(){
-        System.out.println("Fries");
+        System.out.println("Fries----");
     }
 }
 
 class Cola implements Food{
     public void name(){
-        System.out.println("Cola");
+        System.out.println("Cola----");
     }
 }
 
@@ -44,7 +44,7 @@ public class SimpleFactory
     public static void main(String[] args)
     {
         SimpleFactory sf = new SimpleFactory();
-        sf.getFood("Fries");
-        sf.getFood("Cola");
+        sf.getFood("Fries").name();
+        sf.getFood("Cola").name();;
     }
 }
