@@ -2,14 +2,14 @@ package org.example.pattern.factory;
 
 /**
  * @Title: DesignPanttern
- * @Description:
+ * @Description:简单工厂就是用具体的类来创建其他实例
  * @Company:www.keyonecn.com
  * @author:fzw
  * @date:2017/11/6 9:48
  * @version:1.0
  */
 interface Food{
-    public void name();
+     void name();
 }
 class Fries implements Food{
     public void name(){

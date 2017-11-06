@@ -2,17 +2,17 @@ package org.example.pattern.factory;
 
 /**
  * @Title: DesignPanttern
- * @Description:
+ * @Description:方法工厂模式就是讲生成实例的方式交给实现接口的工厂实例
  * @Company:www.keyonecn.com
  * @author:fzw
  * @date:2017/11/6 12:55
  * @version:1.0
  */
 interface Device{
-    public void use();
+     void use();
 }
 interface Factory{
-    public  Device create();
+      Device create();
 }
 class  Mouse implements Device{
 
@@ -22,7 +22,7 @@ class  Mouse implements Device{
         System.out.println("使用鼠标");
     }
 }
-class KeyBorad implements Device{
+class KeyBoard implements Device{
 
     @Override
     public void use()
@@ -33,7 +33,7 @@ class KeyBorad implements Device{
 class MouseFactory implements Factory{
     public Device create()
     {
-        System.out.println("创建鼠标");
+        System.out.println("创建鼠标在中国");
         Device mouse=new Mouse();
         return mouse;
     }
@@ -41,8 +41,8 @@ class MouseFactory implements Factory{
 class KeyBoardFactory implements Factory{
     public Device create()
     {
-        System.out.println("创建键盘");
-        Device keyBoard=new KeyBorad();
+        System.out.println("创建键盘在中国");
+        Device keyBoard=new KeyBoard();
         return keyBoard;
     }
 }

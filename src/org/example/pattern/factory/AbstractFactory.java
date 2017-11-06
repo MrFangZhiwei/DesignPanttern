@@ -2,7 +2,7 @@ package org.example.pattern.factory;
 
 /**
  * @Title: DesignPanttern
- * @Description:
+ * @Description:抽象工厂模式就是讲生成实例的方式交给实现接口的工厂实例主要区别于方法工厂模式就是工厂可以创建多种产品
  * @Company:www.keyonecn.com
  * @author:fzw
  * @date:2017/11/6 13:13
